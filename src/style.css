@@ -1,0 +1,19 @@
+
+
+#state{
+    height: 30px;
+    border: 1px solid black;
+}
+
+#transform{
+    margin: 20px auto;
+    border: none;
+    display: block;
+    background: orange;
+    padding: 15px;
+    color: #FFFF;
+    position: relative;
+    z-index: 99;
+    pointer-events: all;
+    cursor: pointer;
+}

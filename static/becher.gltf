@@ -1,0 +1,300 @@
+{
+    "asset": {
+        "copyright": "2020 (c) Adobe Inc.",
+        "generator": "Adobe Dimension - b6c6386da714573e1c60e92e900169531bbd057d",
+        "version": "2.0"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 25337,
+            "type": "VEC3",
+            "max": [
+                0.04729396849870682,
+                0.1393870711326599,
+                0.047029998153448108
+            ],
+            "min": [
+                -0.04729399085044861,
+                0.00000850000014906982,
+                -0.047030020505189899
+            ]
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 25337,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 25337,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5125,
+            "count": 146688,
+            "type": "SCALAR",
+            "max": [
+                25336.0
+            ],
+            "min": [
+                0.0
+            ]
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5126,
+            "count": 32308,
+            "type": "VEC3",
+            "max": [
+                0.04940766841173172,
+                0.15506525337696076,
+                0.04940329119563103
+            ],
+            "min": [
+                -0.04940766841173172,
+                0.13317444920539857,
+                -0.04940329119563103
+            ]
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 32308,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 32308,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5125,
+            "count": 184608,
+            "type": "SCALAR",
+            "max": [
+                32307.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 304044,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 304044,
+            "byteLength": 304044,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 608088,
+            "byteLength": 202696,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 810784,
+            "byteLength": 586752,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 1397536,
+            "byteLength": 387696,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 1785232,
+            "byteLength": 387696,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 2172928,
+            "byteLength": 258464,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 2431392,
+            "byteLength": 738432,
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 3169824,
+            "uri": "becher_binary.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "perspective": {
+                "znear": 0.000010000000656873454,
+                "yfov": 0.6024156808853149,
+                "zfar": 2.0,
+                "aspectRatio": 1.3333333730697632
+            },
+            "type": "perspective",
+            "name": "render_camera"
+        }
+    ],
+    "images": [
+        {
+            "name": "coffee_withLid_cup_baseColor",
+            "uri": "becher_images/coffee_withLid_cup_baseColor.jpg",
+            "mimeType": "image/jpeg"
+        },
+        {
+            "name": "coffee_withLid_cup_normal",
+            "uri": "becher_images/coffee_withLid_cup_normal.png",
+            "mimeType": "image/png"
+        }
+    ],
+    "materials": [
+        {
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.503000020980835
+            },
+            "normalTexture": {
+                "index": 1
+            },
+            "name": "Bechermaterial",
+            "doubleSided": true
+        },
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.7000000476837158,
+                    0.7000000476837158,
+                    0.7000000476837158,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.3849000036716461
+            },
+            "normalTexture": {
+                "index": 1
+            },
+            "name": "Deckelmaterial",
+            "doubleSided": true
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Becher",
+            "primitives": [
+                {
+                    "attributes": {
+                        "TEXCOORD_0": 2,
+                        "NORMAL": 1,
+                        "POSITION": 0
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "Deckel",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 4,
+                        "NORMAL": 5,
+                        "TEXCOORD_0": 6
+                    },
+                    "indices": 7,
+                    "material": 1
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "translation": [
+                0.5,
+                0.2999914884567261,
+                0.5
+            ],
+            "rotation": [
+                -0.12059047073125839,
+                0.379409521818161,
+                0.04995020851492882,
+                0.9159756302833557
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "camera": 0,
+            "name": "render_camera_n3d"
+        },
+        {
+            "children": [
+                2,
+                3
+            ],
+            "translation": [
+                0.0,
+                -0.00000850000014906982,
+                0.0
+            ],
+            "name": "Kaffeebecher"
+        },
+        {
+            "mesh": 0,
+            "name": "Becher"
+        },
+        {
+            "mesh": 1,
+            "name": "Deckel"
+        }
+    ],
+    "samplers": [
+        {},
+        {}
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0,
+                1
+            ],
+            "name": "scene"
+        }
+    ],
+    "textures": [
+        {
+            "name": "MODEL_COFFEE_WITH_LID_MATERIAL_1::baseColor::image",
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "name": "MODEL_COFFEE_WITH_LID_MATERIAL_1::normal::image",
+            "sampler": 1,
+            "source": 1
+        }
+    ],
+    "scene": 0
+}

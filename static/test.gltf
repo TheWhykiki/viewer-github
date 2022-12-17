@@ -1,0 +1,195 @@
+{
+    "asset": {
+        "copyright": "2020 (c) Adobe Inc.",
+        "generator": "Adobe Dimension - b6c6386da714573e1c60e92e900169531bbd057d",
+        "version": "2.0",
+        "extensions": {
+            "KHR_xmp": {
+                "packet": 0
+            }
+        }
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 39120,
+            "type": "VEC3",
+            "max": [
+                0.002590882359072566,
+                0.002639340702444315,
+                0.0073240455240011219
+            ],
+            "min": [
+                -0.0026260586455464365,
+                -0.002577600535005331,
+                -4.011392604752473e-7
+            ]
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 39120,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 39120,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5125,
+            "count": 58416,
+            "type": "SCALAR",
+            "max": [
+                39119.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 469440,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 469440,
+            "byteLength": 469440,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 938880,
+            "byteLength": 312960,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 1251840,
+            "byteLength": 233664,
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 1485504,
+            "uri": "test_binary.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "perspective": {
+                "znear": 0.00002079235127894208,
+                "yfov": 0.6024156808853149,
+                "zfar": 2.0,
+                "aspectRatio": 1.3333333730697632
+            },
+            "type": "perspective",
+            "name": "render_camera"
+        }
+    ],
+    "materials": [
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6307569742202759,
+                    0.6307569742202759,
+                    0.6307569742202759,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.4000000059604645
+            },
+            "name": "Standardmaterial",
+            "doubleSided": true
+        }
+    ],
+    "meshes": [
+        {
+            "name": "coffee_cup",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "translation": [
+                2.892995595932007,
+                1.1256762742996216,
+                2.430543899536133
+            ],
+            "rotation": [
+                -0.11656389385461807,
+                0.4461461007595062,
+                0.058736249804496768,
+                0.8853906393051148
+            ],
+            "camera": 0,
+            "name": "render_camera_n3d"
+        },
+        {
+            "translation": [
+                1.043739914894104,
+                0.000040092469134833667,
+                1.2658289670944214
+            ],
+            "rotation": [
+                -0.7071068286895752,
+                -2.512149373208117e-15,
+                7.536442613910195e-15,
+                0.7071067094802856
+            ],
+            "scale": [
+                100.00001525878906,
+                100.0,
+                100.0
+            ],
+            "mesh": 0,
+            "name": "coffee_cup"
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0,
+                1
+            ],
+            "name": "scene"
+        }
+    ],
+    "scene": 0,
+    "extensions": {
+        "KHR_xmp": {
+            "@context": {
+                "dc": "http://purl.org/dc/elements/1.1/"
+            },
+            "packets": [
+                {
+                    "dc:date": "2022-12-12T20:01:59.497+01:00",
+                    "dc:format": "model/gltf+json",
+                    "dc:title": "test.dn",
+                    "xmp:CreatorTool": "Adobe Dimension"
+                }
+            ]
+        }
+    },
+    "extensionsUsed": [
+        "KHR_xmp"
+    ]
+}

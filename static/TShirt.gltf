@@ -1,0 +1,171 @@
+{
+    "asset": {
+        "copyright": "2020 (c) Adobe Inc.",
+        "generator": "Adobe Dimension - b6c6386da714573e1c60e92e900169531bbd057d",
+        "version": "2.0"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 1220,
+            "type": "VEC3",
+            "max": [
+                -0.00030898998375050724,
+                0.005007619969546795,
+                0.005081909708678722
+            ],
+            "min": [
+                -0.0056464397348463539,
+                -0.0059504094533622269,
+                -0.005081909708678722
+            ]
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 1220,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 1220,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5125,
+            "count": 6264,
+            "type": "SCALAR",
+            "max": [
+                1219.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 14640,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 14640,
+            "byteLength": 14640,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 29280,
+            "byteLength": 9760,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 39040,
+            "byteLength": 25056,
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 64096,
+            "uri": "TShirt_binary.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "perspective": {
+                "znear": 0.000031740826671011749,
+                "yfov": 0.6024156808853149,
+                "zfar": 2.0,
+                "aspectRatio": 1.3333333730697632
+            },
+            "type": "perspective",
+            "name": "render_camera"
+        }
+    ],
+    "materials": [
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6038274168968201,
+                    0.6038274168968201,
+                    0.6038274168968201,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.6000000238418579
+            },
+            "name": "shirt",
+            "doubleSided": true
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Plane_Plane.008",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "translation": [
+                3.4494171142578127,
+                1.5955398082733155,
+                0.4488505423069
+            ],
+            "rotation": [
+                -0.14915941655635835,
+                0.6547866463661194,
+                0.13402490317821504,
+                0.7287271618843079
+            ],
+            "scale": [
+                0.9999999403953552,
+                1.0,
+                1.0
+            ],
+            "camera": 0,
+            "name": "render_camera_n3d"
+        },
+        {
+            "translation": [
+                0.29777148365974429,
+                0.5950409770011902,
+                0.0
+            ],
+            "scale": [
+                100.0,
+                100.0,
+                100.0
+            ],
+            "mesh": 0,
+            "name": "TShirt"
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0,
+                1
+            ],
+            "name": "scene"
+        }
+    ],
+    "scene": 0
+}
