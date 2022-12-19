@@ -44,6 +44,7 @@ function init() {
     renderer = new THREE.WebGLRenderer( { antialias: true } );
     renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.physicallyCorrectLights = true;
     container.appendChild( renderer.domElement );
 
     stats = new Stats();
@@ -51,17 +52,28 @@ function init() {
 
     scene = new THREE.Scene();
 
+    const loadingManager = new THREE.LoadingManager( () => {
+
+        const loadingScreen = document.getElementById( 'loading-screen' );
+        loadingScreen.classList.add( 'fade-out' );
+
+        // optional: remove loader from DOM via event listener
+        loadingScreen.addEventListener( 'transitionend', onTransitionEnd );
+
+    } );
+
     // LOad camera and lights
     camera = new Camera(THREE).camera;
-    const lights = new Lights(THREE);
-    scene.add( lights.ambientLight);
-    scene.add( lights.dirLight1 );
-    scene.add( lights.dirLight2 );
+    const lights = new Lights(THREE, scene);
+
+    const lightHelper1 = new THREE.DirectionalLightHelper( lights.dirLight1, 5 );
+    scene.add( lightHelper1 );
+
 
     // LOad controls
     const controls = new OrbitControls( camera, renderer.domElement );
     controls.minDistance = 2;
-    controls.maxDistance = 10;
+    controls.maxDistance = 1000;
 
     // Add raycasting line
     const geometry = new THREE.BufferGeometry();
@@ -71,7 +83,7 @@ function init() {
 
     // Add model and actions
 
-    const model = new LoadModels(THREE, textures, scene);
+    const model = new LoadModels(THREE, textures, scene, loadingManager);
     let actions = null;
     setTimeout(() => {
         mesh = model.mesh;
@@ -81,9 +93,10 @@ function init() {
         console.log(remove)
         var tester = {
             clear: function(){
-                console.log('clear')
-                console.log(actions)
                 actions.removeDecals()
+            },
+            change: function(){
+                model.loadNewModel('LeePerrySmith')
             }
         }
 
@@ -93,13 +106,25 @@ function init() {
         gui.add( params, 'scale', 0.1, 5 );
         gui.add( params, 'rotate' );
         gui.add( tester, 'clear' );
+        gui.add( tester, 'change' );
        // gui.add( params, 'move' );
         gui.open();
     }, 1000);
 
     // Add environment
-    const bgTexture = textures.textureLoader.load('./room.jpg');
-    scene.background = bgTexture;
+    //const bgTexture = textures.textureLoader.load('./room.jpg');
+    //scene.background = bgTexture;
+
+    const loader = new THREE.CubeTextureLoader();
+    const texture = loader.load([
+        '/textures/cubeMaps/map1/px.png',
+        '/textures/cubeMaps/map1/nx.png',
+        '/textures/cubeMaps/map1/py.png',
+        '/textures/cubeMaps/map1/ny.png',
+        '/textures/cubeMaps/map1/pz.png',
+        '/textures/cubeMaps/map1/nz.png',
+    ]);
+    scene.background = texture;
 
     // MOuse Helper --> löschen?
     const mouseHelper = new MouseHelper(THREE).mouseHelper;
@@ -189,9 +214,14 @@ function animate() {
 
     renderer.render( scene, camera );
 
+    console.log(camera.position)
     stats.update();
 
+}
 
+function onTransitionEnd( event ) {
+
+    event.target.remove();
 
 }
 
